@@ -71,7 +71,15 @@ def fluctuante(nivel):
 
 
 def main():
-    global nivel_entry, error_label, rapido_label, normal_label, lento_label, parabolico_label, erratico_label, fluctuante_label
+    global \
+        nivel_entry, \
+        error_label, \
+        rapido_label, \
+        normal_label, \
+        lento_label, \
+        parabolico_label, \
+        erratico_label, \
+        fluctuante_label
 
     # Create the main window
     window = tk.Tk()
