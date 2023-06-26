@@ -61,6 +61,7 @@ def fluctuante(nivel):
 
 
 def main(nivel=None):
+    print("press 0 to exit")
     nivel = input_check(nivel)
     while nivel != 0:
         rapido(nivel)
