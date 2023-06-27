@@ -84,6 +84,7 @@ def main():
     # Create the main window
     window = tk.Tk()
     window.title("Calculadora Sistema Experiencia Pokemon")
+    window.minsize(500, 200)
 
     # Create and place the input elements
     nivel_label = tk.Label(window, text="Nivel Pokemon:")
