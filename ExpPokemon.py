@@ -4,21 +4,21 @@
 def input_check(level):
     valid = False
     while not valid:
+        level = input('Pokemon level: ')
         try:
-            level = int(input('Pokemon level: '))
+            level = int(level)
             valid = True
         except ValueError:
             print('This is not a level')
         else:
             if level in range(2, 101):
-                break
+                return str(level)  # Level is valid
             elif level == 0:
                 print("FINISHED")
-                exit()
+                return "0"  # Level is valid, but exit the program
             else:
-                print('level out of range')
-                break
-    return level
+                print('Level out of range')
+                return None  # Level is not valid
 
 
 def erratic(level):
@@ -53,7 +53,7 @@ def slow(level):
     print("slow        ", int(e))
 
 
-def fluctuanting(level):
+def fluctuating(level):
     if 0 < level <= 50:
         e = (level ** 3 * (24 + (level + 1) / 3)) / 50
     elif 51 <= level <= 68:
@@ -64,16 +64,20 @@ def fluctuanting(level):
 
 
 def main(level=None):
-    print("press 0 to exit")
-    level = input_check(level)
-    while level != 0:
+    print("Press 0 to exit")
+    while True:
+        level = input_check(level)
+        if level is None:
+            continue  # Skip calculations and ask for a new level
+        if level == "0":
+            break  # Exit the loop if level is "0"
+        level = int(level)  # Convert the level string to an integer
         fast(level)
         medium_fast(level)
         slow(level)
         medium_slow(level)
         erratic(level)
-        fluctuanting(level)
-        level = input_check(level)
+        fluctuating(level)
 
 
 if __name__ == "__main__":
