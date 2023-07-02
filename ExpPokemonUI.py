@@ -1,85 +1,86 @@
-# Calculadora Sistema Experiencia Pokemon
+# Pokémon Experience growing type
 # https://bulbapedia.bulbagarden.net/wiki/Experience
 
 import tkinter as tk
 
 
 def input_check():
-    nivel = nivel_entry.get()
+    level = nivel_entry.get()
     try:
-        nivel = int(nivel)
-        if 2 <= nivel <= 100:
-            return nivel
+        level = int(level)
+        if 2 <= level <= 100:
+            return level
         else:
             raise ValueError
     except ValueError:
-        error_label.config(text="Nivel fuera de rango")
+        error_label.config(text="Level out of range")
         return None
 
 
 def calculate():
-    nivel = input_check()
-    if nivel is not None:
-        rapido(nivel)
-        normal(nivel)
-        lento(nivel)
-        parabolico(nivel)
-        erratico(nivel)
-        fluctuante(nivel)
+    level = input_check()
+    if level is not None:
+        erratic(level)
+        fast(level)
+        medium_fast(level)
+        medium_slow(level)
+        slow(level)
+        fluctuating(level)
 
 
-def rapido(nivel):
-    e = 0.8 * nivel ** 3
-    rapido_label.config(text="rapido: " + str(int(e)))
-
-
-def normal(nivel):
-    e = nivel ** 3
-    normal_label.config(text="normal: " + str(int(e)))
-
-
-def lento(nivel):
-    e = 1.25 * nivel ** 3
-    lento_label.config(text="lento: " + str(int(e)))
-
-
-def parabolico(nivel):
-    e = 1.2 * nivel ** 3 - 15 * nivel ** 2 + 100 * nivel - 140
-    parabolico_label.config(text="parabolico: " + str(int(e)))
-
-
-def erratico(nivel):
-    if 0 < nivel <= 50:
-        e = (nivel ** 3 * (100 - nivel)) / 50
-    elif 51 <= nivel <= 68:
-        e = (nivel ** 3 * (150 - nivel)) / 100
-    elif 69 <= nivel <= 98:
-        e = (nivel ** 3 * ((1911 - 10 * nivel) / 3)) / 50
+def erratic(level):
+    if 0 < level <= 50:
+        e = (level ** 3 * (100 - level)) / 50
+    elif 51 <= level <= 68:
+        e = (level ** 3 * (150 - level)) / 100
+    elif 69 <= level <= 98:
+        e = (level ** 3 * ((1911 - 10 * level) / 3)) / 50
     else:
-        e = (nivel ** 3 * (160 - nivel)) / 100
-    erratico_label.config(text="erratico: " + str(int(e)))
+        e = (level ** 3 * (160 - level)) / 100
+    erratic_label.config(text="erratic: " + str(int(e)))
 
 
-def fluctuante(nivel):
-    if 0 < nivel <= 50:
-        e = (nivel ** 3 * (24 + (nivel + 1) / 3)) / 50
-    elif 51 <= nivel <= 68:
-        e = (nivel ** 3 * (14 + nivel)) / 50
+def fast(level):
+    e = 0.8 * level ** 3
+    fast_label.config(text="fast: " + str(int(e)))
+
+
+def medium_fast(level):
+    e = level ** 3
+    medium_fast_label.config(text="medium fast: " + str(int(e)))
+
+
+def medium_slow(level):
+    e = 1.2 * level ** 3 - 15 * level ** 2 + 100 * level - 140
+    medium_slow_label.config(text="medium slow: " + str(int(e)))
+
+
+def slow(level):
+    e = 1.25 * level ** 3
+    slow_label.config(text="slow: " + str(int(e)))
+
+
+def fluctuating(level):
+    if 0 < level <= 50:
+        e = (level ** 3 * (24 + (level + 1) / 3)) / 50
+    elif 51 <= level <= 68:
+        e = (level ** 3 * (14 + level)) / 50
     else:
-        e = (nivel ** 3 * (32 + (nivel / 2)) / 50)
-    fluctuante_label.config(text="fluctuante: " + str(int(e)))
+        e = (level ** 3 * (32 + (level / 2)) / 50)
+    fluctuanting_label.config(text="fluctuating: " + str(int(e)))
 
 
 def main():
-    global nivel_entry, error_label, rapido_label, normal_label, lento_label, parabolico_label, erratico_label, fluctuante_label
+    global nivel_entry, error_label, erratic_label, fast_label, medium_fast_label, medium_slow_label, slow_label, \
+        fluctuanting_label
 
     # Create the main window
     window = tk.Tk()
-    window.title("Calculadora Sistema Experiencia Pokemon")
-    window.minsize(500, 200)
+    window.title("Pokémon Experience growing type calculator")
+    window.minsize(550, 300)
 
     # Create and place the input elements
-    nivel_label = tk.Label(window, text="Nivel Pokemon:")
+    nivel_label = tk.Label(window, text="Pokémon level:")
     nivel_label.pack()
     nivel_entry = tk.Entry(window)
     nivel_entry.pack()
@@ -89,27 +90,27 @@ def main():
     error_label.pack()
 
     # Create and place the calculate button
-    calculate_button = tk.Button(window, text="Calcular", command=calculate)
+    calculate_button = tk.Button(window, text="Calculate", command=calculate)
     calculate_button.pack()
 
     # Create and place the result labels
-    rapido_label = tk.Label(window, text="")
-    rapido_label.pack()
+    erratic_label = tk.Label(window, text="")
+    erratic_label.pack()
 
-    normal_label = tk.Label(window, text="")
-    normal_label.pack()
+    fast_label = tk.Label(window, text="")
+    fast_label.pack()
 
-    lento_label = tk.Label(window, text="")
-    lento_label.pack()
+    medium_fast_label = tk.Label(window, text="")
+    medium_fast_label.pack()
 
-    parabolico_label = tk.Label(window, text="")
-    parabolico_label.pack()
+    medium_slow_label = tk.Label(window, text="")
+    medium_slow_label.pack()
 
-    erratico_label = tk.Label(window, text="")
-    erratico_label.pack()
+    slow_label = tk.Label(window, text="")
+    slow_label.pack()
 
-    fluctuante_label = tk.Label(window, text="")
-    fluctuante_label.pack()
+    fluctuanting_label = tk.Label(window, text="")
+    fluctuanting_label.pack()
 
     # Run the main loop
     window.mainloop()
