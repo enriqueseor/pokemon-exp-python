@@ -6,10 +6,12 @@ of coaches we meet on our route.
 I've doned 2 versions:
 
 ![Captura desde 2023-07-02 11-34-56](https://github.com/enriqueseor/pokemon-exp-python/assets/101838134/3c9546a6-0704-4f51-b25e-a2351b0d8480)
+
 console version
 
 ![Captura desde 2023-07-02 11-35-28](https://github.com/enriqueseor/pokemon-exp-python/assets/101838134/29081cf1-d3e7-4abf-b31d-6929c1b33a4e)
-ENG: graphic version with tkinder
+
+graphic version with tkinder
 
 Check this link to learn more about it: https://bulbapedia.bulbagarden.net/wiki/Experience
 
@@ -21,9 +23,11 @@ de entrenadores que nos encontramos en nuestra ruta.
 He creado 2 versiones:
 
 ![Captura desde 2023-07-02 11-34-56](https://github.com/enriqueseor/pokemon-exp-python/assets/101838134/3c9546a6-0704-4f51-b25e-a2351b0d8480)
+
 versión consola
 
 ![Captura desde 2023-07-02 11-35-28](https://github.com/enriqueseor/pokemon-exp-python/assets/101838134/29081cf1-d3e7-4abf-b31d-6929c1b33a4e)
+
 versión gráfica con tkinder
 
 Consulta este link para saber más del tema: https://bulbapedia.bulbagarden.net/wiki/Experience
