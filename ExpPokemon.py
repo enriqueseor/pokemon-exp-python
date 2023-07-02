@@ -72,11 +72,11 @@ def main(level=None):
         if level == "0":
             break  # Exit the loop if level is "0"
         level = int(level)  # Convert the level string to an integer
+        erratic(level)
         fast(level)
         medium_fast(level)
-        slow(level)
         medium_slow(level)
-        erratic(level)
+        slow(level)
         fluctuating(level)
 
 
