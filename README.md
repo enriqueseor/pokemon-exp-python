@@ -13,6 +13,7 @@ Check this link to learn more about it: https://bulbapedia.bulbagarden.net/wiki/
 
 
 ESPAÑOL
+
 He creado un pequeño programa que sirve para saber que tipo de crecimiento de experiencia tiene un Pokémon.
 Esto es util en juegos en donde la cantidad de experiencia conseguida esta limitada por el número de combates
 de entrenadores que nos encontramos en nuestra ruta.
