@@ -2,7 +2,7 @@ ENGLISH
 
 I’ve created a little program that lets you know what kind of growth experience a Pokémon has.
 This is useful in games where the amount of experience achieved is limited by the number of fights
-of coaches we meet on our route.
+of trainers we meet on our route.
 
 I've doned 2 versions:
 
