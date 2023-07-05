@@ -1,3 +1,5 @@
+# pokemon-exp-python
+
 ENGLISH
 
 I’ve created a little program that lets you know what kind of growth experience a Pokémon has.
