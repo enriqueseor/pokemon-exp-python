@@ -1,4 +1,4 @@
-# pokemon-exp-python
+# pokemon experience growth
 
 ENGLISH
 
