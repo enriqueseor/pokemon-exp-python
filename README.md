@@ -26,14 +26,14 @@ There are two versions of the program available:
 - The console is going to ask you to input a Pokemon level number and depending 
 of the amount of experience your Pokemon has his growth type is one or the other.
 
-![Captura desde 2023-07-02 11-34-56](https://github.com/enriqueseor/pokemon-exp-python/assets/101838134/3c9546a6-0704-4f51-b25e-a2351b0d8480)
+![CONSOLE-VERSION](images/CONSOLE-VERSION.png)
 
 ### Graphic Version with Tkinter
 - In this case you have to input the Pokemon level number inside de textbox
 under the Pokemon level tag. Then you have to press the calculate button
 and the results are going to be displayed under.
 
-![Captura desde 2023-07-02 11-35-28](https://github.com/enriqueseor/pokemon-exp-python/assets/101838134/29081cf1-d3e7-4abf-b31d-6929c1b33a4e)
+![UI-VERSION](images/UI-VERSION.png)
 
 ## Resources
 To learn more about Pokémon experience growth, you can refer to [Bulbapedia's page on Experience](https://bulbapedia.bulbagarden.net/wiki/Experience).
