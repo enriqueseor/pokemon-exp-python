@@ -33,7 +33,7 @@ of the amount of experience your Pokemon has his growth type is one or the other
 under the Pokemon level tag. Then you have to press the calculate button
 and the results are going to be displayed under.
 
-![UI-VERSION](images/UI-VERSION.png)
+![GRAPHIC-VERSION](images/GRAPHIC-VERSION.png)
 
 ## Resources
 To learn more about Pokémon experience growth, you can refer to [Bulbapedia's page on Experience](https://bulbapedia.bulbagarden.net/wiki/Experience).
