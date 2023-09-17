@@ -29,12 +29,12 @@ def calculate():
 
 
 def erratic(level):
-    if 0 < level <= 50:
+    if level < 50:
         e = (level ** 3 * (100 - level)) / 50
-    elif 51 <= level <= 68:
+    elif 50 <= level < 68:
         e = (level ** 3 * (150 - level)) / 100
-    elif 69 <= level <= 98:
-        e = (level ** 3 * ((1911 - 10 * level) / 3)) / 50
+    elif 68 <= level < 98:
+        e = (level ** 3 * ((1911 - 10 * level) / 3)) / 500
     else:
         e = (level ** 3 * (160 - level)) / 100
     erratic_label.config(text="erratic: " + str(int(e)))
@@ -61,9 +61,9 @@ def slow(level):
 
 
 def fluctuating(level):
-    if 0 < level <= 50:
-        e = (level ** 3 * (24 + (level + 1) / 3)) / 50
-    elif 51 <= level <= 68:
+    if level < 15:
+        e = (level ** 3 * (24 + ((level + 1) / 3))) / 50
+    elif 15 <= level < 36:
         e = (level ** 3 * (14 + level)) / 50
     else:
         e = (level ** 3 * (32 + (level / 2)) / 50)
