@@ -10,7 +10,6 @@ by the number of battles against trainers on your route.
 - [About](#about)
 - [Versions](#versions)
 - [Resources](#resources)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## About
@@ -37,16 +36,6 @@ and the results are going to be displayed under.
 
 ## Resources
 To learn more about Pokémon experience growth, you can refer to [Bulbapedia's page on Experience](https://bulbapedia.bulbagarden.net/wiki/Experience).
-
-## Contributing
-
-Contributions are welcome! If you'd like to contribute to Pokémon Growth Experience Calculator, please follow these steps:
-
-1. Fork this repository.
-2. Create a new branch: `git checkout -b feature/your-feature-name`.
-3. Make your changes and commit them: `git commit -am 'Add new feature'`.
-4. Push to the branch: `git push origin feature/your-feature-name`.
-5. Create a pull request.
 
 ## License
 This project is licensed under the GNU General Public License v3.0. See the [LICENSE](LICENSE) file for details.
